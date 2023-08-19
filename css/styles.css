@@ -982,6 +982,11 @@ body {
     transition: transform 250ms ease-in-out;
 }
 
+.menu-toggle {
+    border: transparent;
+    margin-left: auto;
+}
+
 .is-open {
     opacity: 1;
     pointer-events: auto;
@@ -1197,8 +1202,6 @@ body {
         gap: 72px;
         margin: 0;
     }
-    .footer-logo-text {
-    }
     .footer-logo {
         display: inline-block;
         text-align: unset;
@@ -1268,6 +1271,17 @@ body {
     }
     .header-list-address {
         flex-direction: row;
+    }
+    .footer {
+        padding: 100px 0 100px;
+    }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 584px;
+        align-items: baseline;
+        gap: 72px;
+        margin: 0;
     }
 }
 
