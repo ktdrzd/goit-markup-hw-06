@@ -1000,9 +1000,7 @@ body {
         display: flex;
     }
     .header-address {
-        display: unset;
-        flex-direction: column;
-        margin-left: auto;
+        display: flex;
     }
     .menu-toggle {
         display: none;
@@ -1030,6 +1028,53 @@ body {
     }
     .customers-item {
         flex-basis: calc((100% - 144px) / 3);
+    }
+    .ft-table {
+       display: flex;
+    }
+    .footer-soc-link {
+        margin-left: 24px;
+    }
+    .footer-logo-text {
+        text-align: left;
+    }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 584px;
+        align-items: baseline;
+        gap: 72px 24px;
+    }
+    .footer-logo {
+        display: inline-block;
+        text-align: unset;
+    }
+    .footer-form {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 1440px;
+    }
+    .solution-icon {
+        display: flex;
+    }
+    .solutions-list {
+        display: flex;
+        gap: 24px;
+    }
+    .solutions-item {
+        display: block;
+        flex-basis: calc((100% - 96px) / 4);
+    }
+    .team-list {
+        display: flex;
+        gap: 64px;
+    }
+    .team-item {
+        flex-basis: calc((100% - 256px) / 2);
     }
 }
 
