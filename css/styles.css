@@ -981,4 +981,10 @@ body {
     .customers-item {
         flex-basis: calc((100% - 72px) / 2);
     }
+    .header-list {
+        display: none;
+    }
+    .header-address {
+        display: none;
+    }
 }
