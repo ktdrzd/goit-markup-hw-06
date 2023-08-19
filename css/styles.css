@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-    width: 1158px;
+    width: 428px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -165,12 +165,12 @@ body {
     color: var(--white, #FFF);
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 1.12px;
-    max-width: 496px;
-    margin-left: calc((100% - 469px) / 2);
+    letter-spacing: 0.72px;
+    max-width: 320px;
+    margin-left: calc((100% - 320px) / 2);
 }
 
 .hero-btn {
@@ -187,7 +187,7 @@ body {
     height: 56px;
     border: none;
     border-radius: 4px;
-    margin-left: calc((100% - 189px) / 2);
+    margin-left: calc((100% - 169px) / 2);
     margin-top: 64px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -243,24 +243,24 @@ body {
 }
 
 .solutions-list {
-    display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .solutions-item {
     display: block;
-    width: calc((100% - 72px) / 4);
 }
 
 .solutions-subtitle {
     color: var(--navyblue, #2E2F42);
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
     text-transform: capitalize;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .solutions-item-text {
@@ -343,7 +343,6 @@ body {
 }
 
 .team-list {
-    display: flex;
     gap: 24px;
 }
 
@@ -354,7 +353,7 @@ body {
     border-radius: 0 0 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+        0px 2px 1px rgba(46, 47, 66, 0.08);    
 }
 
 .team-item-title {
@@ -366,6 +365,10 @@ body {
     color: #2e2f42;
     text-align: center;
     margin-bottom: 8px;
+}
+
+.team-block {
+    text-align: center;
 }
 
 .team-text {
@@ -445,8 +448,10 @@ body {
 
 .footer-container {
     display: flex;
-    align-items: baseline;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
 }
 
 .ft-link {
@@ -464,17 +469,6 @@ body {
     text-transform: uppercase;
 }
 
-.footer-text {
-    color: var(--cloud, #F4F4FD);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    margin-top: 8px;
-    max-width: 264px;
-}
-
 .footer-logo {
     color: var(--iris, #4D5AE5);
     font-family: 'Raleway', sans-serif;
@@ -483,6 +477,21 @@ body {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-text {
+    color: var(--cloud, #F4F4FD);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    max-width: 268px;
+    margin: 0;
 }
 
 .footer-soc-text {
@@ -491,13 +500,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
+    text-align: center; 
 }
 
 .footer-soc-list {
     display: flex;
     gap: 16px;
-    margin-right: 120px;
 }
 
 .footer-soc-item {
@@ -527,11 +536,9 @@ body {
 }
 
 .footer-logo-text {
-    margin-right: 120px;
 }
 
 .footer-form {
-    display: flex;
     gap: 24px;
 }
 
@@ -542,13 +549,14 @@ body {
     line-height: 24px;
     letter-spacing: 0.32px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .input-email {
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 264px;
+    width: 398px;
     height: 40px;
     background-color: transparent;
     font-size: 12px;
@@ -556,6 +564,7 @@ body {
     letter-spacing: 0.04em;
     padding-left: 16px;
     color: #ffffff;
+    margin-bottom: 16px;
 }
 
 .input-email::placeholder {
@@ -566,6 +575,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 16px;
     border-radius: 4px;
     background: #4D5AE5;
@@ -577,6 +587,7 @@ body {
     letter-spacing: 0.04em;
     cursor: pointer;
     border: none;
+    margin: auto;
 
 }
 
@@ -955,9 +966,19 @@ body {
 
 /*Media*/
 
-@media screen (min-width: 428px) {
-    .hero {
-        width: 428px;
-        height: 432px;
+@media screen and (min-width: 428px) {
+    .solution-icon {
+       display: none;
+    }
+    .tasks {
+        display: none;;
+    }
+    .customers-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px;
+    }
+    .customers-item {
+        flex-basis: calc((100% - 72px) / 2);
     }
 }
